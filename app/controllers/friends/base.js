@@ -23,12 +23,11 @@ export default Ember.Controller.extend({
 			} else {
 				this.set('errorMessage', 'You have to fill all the fields');
 			}
-
+			
 			// don't bubble
 			return false; 
 		}, 
 		cancel: function() {
-			// bubble
 			return true; 
 		}
 	}
