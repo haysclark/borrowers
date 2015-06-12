@@ -2,7 +2,9 @@ import DS from 'ember-data';
 import Ember from 'ember';
 
 export default DS.Model.extend({
-  articles: 	 DS.hasMany('article', {async:true}),
+  articles: 	 DS.hasMany('article', { 
+  	async: true
+  }),
   email: 		 DS.attr('string'),
   firstName: 	 DS.attr('string'),
   lastName: 	 DS.attr('string'),
